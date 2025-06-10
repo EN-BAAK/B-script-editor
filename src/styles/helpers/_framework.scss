@@ -1,3 +1,7 @@
+.min-h-100vh {
+  min-height: 100vh;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -9,6 +13,17 @@
 }
 .flex-1 {
   flex: 1;
+}
+
+.fs-md {
+  font-size: 14px
+}
+
+.fs-sm {
+  font-size: 12px
+}
+.fs-xs {
+  font-size: 10px
 }
 
 .transition-03 {

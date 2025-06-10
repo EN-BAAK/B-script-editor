@@ -1,0 +1,10 @@
+aside#sidebar {
+  min-width: 240px;
+  max-width: 240px;
+  max-height: 100vh;
+  overflow: hidden;
+
+  .dictionary {
+    overflow: auto;
+  }
+}
