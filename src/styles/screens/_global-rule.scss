@@ -11,27 +11,20 @@ body {
 
   color: var(--c-grey-text);
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--p-main);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--p-second);
-  border: 3px solid var(--p-second);
-  @include prefixer(border-radius, 5px);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--p-second-transparent);
-}
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-*[data-ani] {
-  @include opacity(0);
-}
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//   background: var(--c-main);
+// }
+// ::-webkit-scrollbar-thumb {
+//   background-color: var(--c-second);
+//   border: 3px solid var(--c-second);
+//   @include prefixer(border-radius, 5px);
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//   background: var(--c-second-hover);
+// }
 a {
   text-decoration: none;
 }
@@ -50,8 +43,8 @@ select {
     @include prefixer(transition, var(--time-transition));
   }
   &:focus {
-    border-color: var(--c-main-transparent) !important;
-    box-shadow: 0 0 0 0.1rem var(--c-main-transparent) !important;
+    border-color: var(--c-main-shadow) !important;
+    box-shadow: 0 0 0 0.1rem var(--c-main-shadow) !important;
 
     &::placeholder {
       @include opacity(0);
