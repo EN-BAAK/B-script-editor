@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box !important;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px 0 0 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  color: var(--c-grey-text);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--p-main);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--p-second);
+  border: 3px solid var(--p-second);
+  @include prefixer(border-radius, 5px);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--p-second-transparent);
+}
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+*[data-ani] {
+  @include opacity(0);
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+}
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  resize: none !important;
+  &::placeholder {
+    @include prefixer(transition, var(--time-transition));
+  }
+  &:focus {
+    border-color: var(--c-main-transparent) !important;
+    box-shadow: 0 0 0 0.1rem var(--c-main-transparent) !important;
+
+    &::placeholder {
+      @include opacity(0);
+    }
+  }
+}
+textarea {
+  resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+section {
+  padding: 50px 0;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}

@@ -1,0 +1,76 @@
+.bg-main {
+  background-color: var(--c-main);
+}
+
+.text-main {
+  color: var(--c-main);
+}
+
+.bg-second {
+  background-color: var(--c-second);
+}
+
+.text-second {
+  color: var(--c-second);
+}
+
+.p-bg-main {
+  background-color: var(--p-main);
+}
+
+.p-text-main {
+  color: var(--p-main);
+}
+
+.p-bg-second {
+  background-color: var(--p-second);
+}
+
+.p-text-second {
+  color: var(--p-second);
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.h-screen {
+  height: calc(100vh - 72px);
+}
+
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+.min-h-screen {
+  min-height: calc(100vh - 88px);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-y {
+  display: flex;
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.transition-03 {
+  @include prefixer(transition, var(--time-transition) ease-in-out);
+}
+
+.transition-1 {
+  @include prefixer(transition, var(--time-long) ease-in-out);
+}
+
+.pointer {
+  cursor: pointer;
+}
