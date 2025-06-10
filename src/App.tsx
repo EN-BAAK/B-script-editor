@@ -1,6 +1,7 @@
 import React from "react"
 import Sidebar from "./layouts/Sidebar"
 import type { FileNode } from "./misc/types"
+import Main from "./layouts/Main"
 const structure: FileNode[] = [
   {
     name: "public",
@@ -101,8 +102,9 @@ const structure: FileNode[] = [
 function App(): React.JSX.Element {
 
   return (
-    <main className="bg-dark min-h-100vh">
+    <main className="bg-dark h-100vh d-flex overflow-hidden">
       <Sidebar directoryName="my-project" structure={structure} />
+      <Main />
     </main>
   )
 }

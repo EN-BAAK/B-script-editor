@@ -1,5 +1,5 @@
-.min-h-100vh {
-  min-height: 100vh;
+.h-100vh {
+  height: 100vh;
 }
 
 .flex-center {
@@ -7,10 +7,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .flex-center-y {
   display: flex;
   align-items: center;
 }
+
 .flex-1 {
   flex: 1;
 }
@@ -22,6 +24,7 @@
 .fs-sm {
   font-size: 12px
 }
+
 .fs-xs {
   font-size: 10px
 }
